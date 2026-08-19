@@ -871,12 +871,44 @@ a { color: inherit; text-decoration: none; }
   width: 100%;
   padding: 4px 8px;
 }
-.band-stickers-travel {
-  padding-bottom: 8px;
+.sticker-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  gap: 12px 16px;
+  width: 100%;
+  padding: 6px 8px;
+}
+.sticker-row-top {
+  padding-bottom: 10px;
   border-bottom: 2px solid #e6e6e6;
 }
-.band-stickers-dtc {
-  padding-top: 2px;
+.sticker-row-bottom {
+  padding-top: 4px;
+}
+/* 强制隐藏历史版本可能残留的行业标签 */
+.band-label,
+.travel-band .band-label,
+.dtc-band .band-label,
+.sticker-band .band-label {
+  display: none !important;
+  visibility: hidden !important;
+  width: 0 !important;
+  height: 0 !important;
+  overflow: hidden !important;
+  position: absolute !important;
+  pointer-events: none !important;
+}
+.travel-band::before,
+.dtc-band::before,
+.band-stickers-travel::before,
+.band-stickers-dtc::before,
+.sticker-row::before,
+.sticker-row::after {
+  content: none !important;
+  display: none !important;
 }
 /* 独立象限贴纸也居中 */
 .sticker-zone {
@@ -1026,7 +1058,7 @@ a { color: inherit; text-decoration: none; }
   .matrix-quad { min-height: 170px; padding: 14px; }
   .priority-module.combined .matrix-frame { min-height: 400px; }
   .sticker { font-size: 12px; padding: 8px 12px; }
-  .band-stickers { gap: 8px 10px; }
+  .sticker-row { gap: 8px 10px; }
   .inventory-grid { grid-template-columns: 1fr; }
 }
 @media (max-width: 640px) {

@@ -1,4 +1,6 @@
 (() => {
+  document.querySelectorAll(".band-label, .sticker-band > .band-label").forEach((el) => el.remove());
+
   const els = document.querySelectorAll(".card, .arch-wrap, .mobius-panel, .matrix, .diff-table, .flywheel, .journey-card, .usecase-card, .priority-module, .inventory-col");
   if (!("IntersectionObserver" in window)) return;
   const io = new IntersectionObserver((entries) => {
