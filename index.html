@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>YinoLink × WhatsApp BSP · 资质申请 Pitch</title>
-  <link rel="stylesheet" href="styles.css?v=8" />
+  <link rel="stylesheet" href="styles.css?v=9" />
 </head>
 <body>
   <header class="topnav">
@@ -14,6 +14,9 @@
         <a href="#position">战略定位</a>
         <a href="#architecture">产品架构</a>
         <a href="#solutions">行业闭环</a>
+        <a href="#aigc">AIGC 旅程</a>
+        <a href="#usecases">详细 Use Case</a>
+        <a href="#priority">场景优先级</a>
         <a href="#services">产品服务</a>
         <a href="#diff">差异化</a>
       </nav>
@@ -258,9 +261,460 @@
     </div>
   </section>
 
-  <section class="section alt" id="services">
+
+  <section class="section alt" id="aigc">
     <div class="wrap">
-      <p class="kicker">04 · 产品服务与消息类别</p>
+      <p class="kicker">04 · AIGC 个性化生成旅程</p>
+      <h2>AIGC 个性化生成：把会话变成看得见的转化</h2>
+      <p class="section-sub">基于用户行为历史、用户画像、历史对话，在 WhatsApp 内生成定制视觉资产，促进转化、提升营销效果——让每一次回复都带上「为你定制」的证据。</p>
+
+      <div class="journey-grid">
+        <article class="journey-card">
+          <div class="journey-head">
+            <span class="badge">Journey 1 · 电商 DTC</span>
+            <h3>试穿 / 试戴 / 试用再营销</h3>
+            <div class="persona">
+              <div class="persona-avatar" aria-hidden="true">E</div>
+              <div>
+                <strong>Emma · 28 岁</strong>
+                <span>欧美独立站女装买家 · 多次浏览针织外套、聊过尺码、弃购过一次</span>
+              </div>
+            </div>
+          </div>
+
+          <ol class="journey-steps">
+            <li>
+              <b>01</b>
+              <div>
+                <h4>CTWA 进线 / 浏览历史打标</h4>
+                <p>广告点击进线，同步浏览与弃购标签至会话档案</p>
+              </div>
+            </li>
+            <li>
+              <b>02</b>
+              <div>
+                <h4>画像：肤色 / 身型偏好 / 尺码</h4>
+                <p>从历史对话与偏好表单补齐视觉生成所需特征</p>
+              </div>
+            </li>
+            <li>
+              <b>03</b>
+              <div>
+                <h4>对话确认场景</h4>
+                <p>通勤或约会场景确认，锁定生成语境与构图</p>
+              </div>
+            </li>
+            <li>
+              <b>04</b>
+              <div>
+                <h4>AIGC 生成试穿图 + 2 色对比</h4>
+                <p>输出「她穿上这件」主图与双色并排对比卡</p>
+              </div>
+            </li>
+            <li>
+              <b>05</b>
+              <div>
+                <h4>WhatsApp 富媒体 + 一键加购</h4>
+                <p>会话内发送图卡与支付 / 加购深链</p>
+              </div>
+            </li>
+            <li>
+              <b>06</b>
+              <div>
+                <h4>成交事件回传 Ads</h4>
+                <p>加购 / 成交写回，反哺再营销受众与 ROAS</p>
+              </div>
+            </li>
+          </ol>
+
+          <div class="asset-mock asset-tryon" aria-label="试穿对比资产示意">
+            <div class="mock-label">AIGC 资产示意 · 试穿对比</div>
+            <div class="tryon-frames">
+              <div class="tryon-frame">
+                <div class="mannequin m1"></div>
+                <span>Camel · 通勤</span>
+              </div>
+              <div class="tryon-frame">
+                <div class="mannequin m2"></div>
+                <span>Olive · 约会</span>
+              </div>
+            </div>
+            <div class="mock-cta">一键加购 · WhatsApp Catalog</div>
+          </div>
+        </article>
+
+        <article class="journey-card">
+          <div class="journey-head">
+            <span class="badge warm">Journey 2 · 入境旅游</span>
+            <h3>线路图 + 旅行美照预览</h3>
+            <div class="persona">
+              <div class="persona-avatar alt" aria-hidden="true">K</div>
+              <div>
+                <strong>Kenji · 35 岁</strong>
+                <span>日本家庭入境云南 · 预算中高 · 问过大理+丽江 · 犹豫约 3 周</span>
+              </div>
+            </div>
+          </div>
+
+          <ol class="journey-steps">
+            <li>
+              <b>01</b>
+              <div>
+                <h4>线索分层</h4>
+                <p>按意向 / 预算 / 出行月分层，进入长周期跟进池</p>
+              </div>
+            </li>
+            <li>
+              <b>02</b>
+              <div>
+                <h4>对话收集偏好</h4>
+                <p>亲子 / 拍照 / 轻松节奏等偏好写入画像</p>
+              </div>
+            </li>
+            <li>
+              <b>03</b>
+              <div>
+                <h4>AIGC 定制线路图</h4>
+                <p>生成日行程卡片式线路图，可视化行程价值</p>
+              </div>
+            </li>
+            <li>
+              <b>04</b>
+              <div>
+                <h4>AIGC 旅行美照预览</h4>
+                <p>生成「你们一家在洱海边」情绪预览图</p>
+              </div>
+            </li>
+            <li>
+              <b>05</b>
+              <div>
+                <h4>WhatsApp 发送 → 报价 / 定金</h4>
+                <p>顾问接力报价，引导定金关成交</p>
+              </div>
+            </li>
+            <li>
+              <b>06</b>
+              <div>
+                <h4>晚到转化回传效果广告</h4>
+                <p>定金 / 成交归因写回 Ads，反哺下一轮投放</p>
+              </div>
+            </li>
+          </ol>
+
+          <div class="asset-mock asset-travel" aria-label="线路与美照资产示意">
+            <div class="mock-label">AIGC 资产示意 · 线路图 + 美照</div>
+            <div class="travel-frames">
+              <div class="itinerary-card">
+                <span class="day">Day 1</span>
+                <strong>大理 · 洱海骑行</strong>
+                <em>亲子轻松 · 拍照点位</em>
+              </div>
+              <div class="itinerary-card">
+                <span class="day">Day 2</span>
+                <strong>丽江 · 古城慢游</strong>
+                <em>家庭合影 · 轻徒步</em>
+              </div>
+              <div class="photo-preview">
+                <div class="photo-sky"></div>
+                <div class="photo-lake"></div>
+                <div class="photo-family"></div>
+                <span>洱海边 · 家庭预览</span>
+              </div>
+            </div>
+            <div class="mock-cta">顾问报价 · 锁定定金</div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="usecases">
+    <div class="wrap">
+      <p class="kicker">05 · 高频场景详细 Use Case</p>
+      <h2>高频场景详细 Use Case</h2>
+      <p class="section-sub">拆解三类高频经营场景：每个场景对齐「画像 → 痛点 → 现有局限 → 量化提升」，便于 Meta 评审与客户共创时快速对齐价值。</p>
+
+      <div class="usecase-grid">
+        <article class="usecase-card">
+          <span class="badge">场景 01</span>
+          <h3>电商弃购后 AIGC 试穿再营销</h3>
+          <div class="usecase-quad">
+            <div class="uq">
+              <span class="uq-label">代表客户画像</span>
+              <p>欧美独立站服饰 / 美妆买家；高浏览、低转化；曾弃购且对尺码与上身效果犹豫。</p>
+            </div>
+            <div class="uq">
+              <span class="uq-label">客户痛点</span>
+              <p>无法「看见自己穿上」；纯文字跟进说服力弱；弃购挽回窗口短、转化成本高。</p>
+            </div>
+            <div class="uq">
+              <span class="uq-label">现有方案局限</span>
+              <p>通用弃购模板同质化；缺画像驱动的视觉资产；会话与广告再营销信号割裂。</p>
+            </div>
+            <div class="uq metrics">
+              <span class="uq-label">量化业务提升</span>
+              <ul>
+                <li>会话点击率 <b>+35%~50%</b></li>
+                <li>弃购挽回成交率 <b>+18%~25%</b></li>
+                <li>模板互动率显著提升</li>
+                <li>CPA <b>-12%</b></li>
+              </ul>
+            </div>
+          </div>
+        </article>
+
+        <article class="usecase-card">
+          <span class="badge warm">场景 02</span>
+          <h3>旅游长周期线索：线路图 + 美照预览促定金</h3>
+          <div class="usecase-quad">
+            <div class="uq">
+              <span class="uq-label">代表客户画像</span>
+              <p>入境家庭 / 小团体游；预算中高；决策周期 2~6 周；多次询价未定金。</p>
+            </div>
+            <div class="uq">
+              <span class="uq-label">客户痛点</span>
+              <p>行程抽象、情绪价值难感知；顾问跟进轮次多；报价后沉默易流失。</p>
+            </div>
+            <div class="uq">
+              <span class="uq-label">现有方案局限</span>
+              <p>PDF / 静态线路同质；缺个性化预览；长周期触达依赖人工且难归因。</p>
+            </div>
+            <div class="uq metrics">
+              <span class="uq-label">量化业务提升</span>
+              <ul>
+                <li>报价→定金转化 <b>+20%~30%</b></li>
+                <li>跟进轮次 <b>-30%</b></li>
+                <li>决策周期缩短 <b>5~8 天</b></li>
+              </ul>
+            </div>
+          </div>
+        </article>
+
+        <article class="usecase-card">
+          <span class="badge wa">场景 03</span>
+          <h3>夜班 / 非工作时段 AI + 视觉资产首响</h3>
+          <div class="usecase-quad">
+            <div class="uq">
+              <span class="uq-label">代表客户画像</span>
+              <p>跨时区进线客户（欧美晚间 / 亚太清晨）；高意向但人工在线窗口错位。</p>
+            </div>
+            <div class="uq">
+              <span class="uq-label">客户痛点</span>
+              <p>首响过慢导致流失；夜间仅自动回复话术，缺少可决策的视觉与行动入口。</p>
+            </div>
+            <div class="uq">
+              <span class="uq-label">现有方案局限</span>
+              <p>机器人只会答 FAQ；无法按画像即时生成试穿图 / 线路预览；人工次日接力成本高。</p>
+            </div>
+            <div class="uq metrics">
+              <span class="uq-label">量化业务提升</span>
+              <ul>
+                <li>首响时间 <b>&lt;1 min</b></li>
+                <li>夜间进线成交率 <b>+15%~22%</b></li>
+                <li>人工负载 <b>-25%</b></li>
+              </ul>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section alt" id="priority">
+    <div class="wrap">
+      <p class="kicker">06 · 场景筛选优先级</p>
+      <h2>从 Demo 旅程中提取场景 · 四象限优先级图</h2>
+      <p class="section-sub">以下场景均来自 <a href="https://guy0525.github.io/yinolink-whatsapp-dtc-demo/" target="_blank" rel="noopener">DTC Demo</a> 与 <a href="https://guy0525.github.io/yasotrip-whatsapp-demo/" target="_blank" rel="noopener">Yaso Trip Demo</a>「WhatsApp 用户旅程 · 实时编排台」；横轴为实施难度，纵轴为业务价值，优先落地「高价值 · 低难度」速赢项目，并至少锁定 1 条关键战役。</p>
+
+      <div class="priority-layout">
+        <aside class="priority-method">
+          <span class="method-tag">互动环节</span>
+          <h3>筛选优先级</h3>
+          <p class="method-lede">不是所有旅程都同等重要。优先关注<strong>「高价值、低难度」</strong>的机会。</p>
+          <div class="method-step">
+            <b>01</b>
+            <div>
+              <strong>评估价值</strong>
+              <p>是否解决核心痛点（弃购 / 弃询 / 首响慢）？能否直接带来成交或定金？</p>
+            </div>
+          </div>
+          <div class="method-step">
+            <b>02</b>
+            <div>
+              <strong>评估难度</strong>
+              <p>技术对接是否复杂？模板 / 知识库 / CRM 是否已有？是否需 AIGC 或人工深度协作？</p>
+            </div>
+          </div>
+          <div class="method-step">
+            <b>03</b>
+            <div>
+              <strong>选出 Top 3–5</strong>
+              <p>每行业锁定 2–3 个速赢 + 1–2 个关键战役；填充项目按需排期，避开资源黑洞。</p>
+            </div>
+          </div>
+          <div class="priority-rollout">
+            <strong>建议落地顺序</strong>
+            <ol>
+              <li><span class="seq q">Q</span>速赢：AI 首响 · 弃购/弃询挽回 · 长周期提醒</li>
+              <li><span class="seq q">Q</span>速赢：尺码导诊 / 报价防流失 · 订单效用消息</li>
+              <li><span class="seq k">K</span>关键战役：端到端 CTWA 闭环 · 个性化定制 / 造型顾问</li>
+              <li><span class="seq f">F</span>填充：签收复购 · eSIM 行前 · 节日问候类</li>
+            </ol>
+          </div>
+        </aside>
+
+        <div class="priority-boards">
+          <!-- DTC Matrix -->
+          <div class="priority-board">
+            <div class="board-head">
+              <span class="badge">电商 DTC · ORLI Demo</span>
+              <h4>13 条旅程 · 精选 5 条入阵</h4>
+            </div>
+            <div class="matrix-wrap">
+              <div class="matrix-y">业务价值 VALUE ↑</div>
+              <div class="matrix-chart">
+                <div class="matrix-quad q-quick">
+                  <span class="quad-label">速赢项目 Quick Wins</span>
+                  <span class="quad-sub">高价值 · 低难度</span>
+                  <div class="quad-chips">
+                    <span class="chip q">智能客服实时沟通</span>
+                    <span class="chip q">弃购挽回再营销</span>
+                    <span class="chip q">跨时区夜间接待</span>
+                    <span class="chip q">尺码导诊成交</span>
+                  </div>
+                </div>
+                <div class="matrix-quad q-key">
+                  <span class="quad-label">关键战役 Key Battles</span>
+                  <span class="quad-sub">高价值 · 高难度</span>
+                  <div class="quad-chips">
+                    <span class="chip k">端到端客户旅程</span>
+                    <span class="chip k">会员提前开售</span>
+                  </div>
+                </div>
+                <div class="matrix-quad q-filler">
+                  <span class="quad-label">填充项目 Fillers</span>
+                  <span class="quad-sub">低价值 · 低难度</span>
+                  <div class="quad-chips">
+                    <span class="chip f">订单流程提醒</span>
+                    <span class="chip f">物流效用消息</span>
+                    <span class="chip f">签收后复购</span>
+                  </div>
+                </div>
+                <div class="matrix-quad q-black">
+                  <span class="quad-label">资源黑洞</span>
+                  <span class="quad-sub">低价值 · 高难度</span>
+                  <div class="quad-chips">
+                    <span class="chip b">退换码闭环</span>
+                  </div>
+                </div>
+                <div class="matrix-axis-x">实施难度 EFFORT →</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Travel Matrix -->
+          <div class="priority-board">
+            <div class="board-head">
+              <span class="badge warm">入境旅游 · Yaso Demo</span>
+              <h4>10 条旅程 · 精选 5 条入阵</h4>
+            </div>
+            <div class="matrix-wrap">
+              <div class="matrix-y">业务价值 VALUE ↑</div>
+              <div class="matrix-chart">
+                <div class="matrix-quad q-quick">
+                  <span class="quad-label">速赢项目 Quick Wins</span>
+                  <span class="quad-sub">高价值 · 低难度</span>
+                  <div class="quad-chips">
+                    <span class="chip q">非工作时段 AI 接待</span>
+                    <span class="chip q">弃询挽回</span>
+                    <span class="chip q">长周期跟进提醒</span>
+                    <span class="chip q">报价后防流失</span>
+                  </div>
+                </div>
+                <div class="matrix-quad q-key">
+                  <span class="quad-label">关键战役 Key Battles</span>
+                  <span class="quad-sub">高价值 · 高难度</span>
+                  <div class="quad-chips">
+                    <span class="chip k">端到端客户旅程</span>
+                    <span class="chip k">咨询转定金</span>
+                    <span class="chip k">个性化定制</span>
+                  </div>
+                </div>
+                <div class="matrix-quad q-filler">
+                  <span class="quad-label">填充项目 Fillers</span>
+                  <span class="quad-sub">低价值 · 低难度</span>
+                  <div class="quad-chips">
+                    <span class="chip f">签证行前 eSIM 双保险</span>
+                    <span class="chip f">落地微信群衔接</span>
+                  </div>
+                </div>
+                <div class="matrix-quad q-black">
+                  <span class="quad-label">资源黑洞</span>
+                  <span class="quad-sub">低价值 · 高难度</span>
+                  <div class="quad-empty">暂不建议优先投入</div>
+                </div>
+                <div class="matrix-axis-x">实施难度 EFFORT →</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="scenario-inventory">
+        <h3>编排台全量场景清单（提取自 Demo）</h3>
+        <div class="inventory-grid">
+          <article class="inventory-col">
+            <h4>电商 DTC · 13 条</h4>
+            <p class="inv-group">跨境电商典型场景</p>
+            <ul>
+              <li><strong>智能客服实时沟通</strong><span>秒级首响 → 多轮答疑 → 转人工</span></li>
+              <li><strong>订单流程提醒</strong><span>下单确认 → 打包 → 清关 → 签收</span></li>
+              <li><strong>弃购挽回再营销</strong><span>1h 轻提醒 → 24h 激励 → 48h 最后机会</span></li>
+            </ul>
+            <p class="inv-group">行业通用旅程</p>
+            <ul>
+              <li><strong>端到端客户旅程</strong><span>CTWA → Catalog → 尺码 → 支付</span></li>
+              <li><strong>尺码导诊成交</strong><span>结构化量体 → 少退换 → 快下单</span></li>
+              <li><strong>弃购挽回</strong><span>24h 分层模板 + 库存紧迫感</span></li>
+              <li><strong>缺货到货提醒</strong><span>Waitlist → 到货模板 → 限时锁库存</span></li>
+              <li><strong>物流效用消息</strong><span>发货 → 清关 → 签收 → 复购入口</span></li>
+            </ul>
+            <p class="inv-group">ORLI 案例校准</p>
+            <ul>
+              <li><strong>跨时区夜间接待</strong><span>AI 首响保住意向，早班人工成交</span></li>
+              <li><strong>会员提前开售</strong><span>私域模板 → 限量 SKU → 15 分钟锁库</span></li>
+              <li><strong>退换码闭环</strong><span>签收不适 → 换码指引 → 信任留存</span></li>
+              <li><strong>造型顾问成交</strong><span>场景穿搭 → 组合推荐 → 高 AOV</span></li>
+              <li><strong>签收后复购</strong><span>穿搭跟进 → 关联推荐 → 二次成交</span></li>
+            </ul>
+          </article>
+          <article class="inventory-col">
+            <h4>入境旅游 · 10 条</h4>
+            <p class="inv-group">行业通用旅程</p>
+            <ul>
+              <li><strong>端到端客户旅程</strong><span>广告进线 → 咨询 → 定金 → eSIM 双保险</span></li>
+              <li><strong>咨询转定金</strong><span>偏好 → 报价 → 异议处理 → 定金</span></li>
+              <li><strong>弃询挽回</strong><span>沉默 → 模板 → 改期 → 锁位</span></li>
+              <li><strong>个性化定制</strong><span>采集 → A/B → 迭代 → 锁定</span></li>
+              <li><strong>签证行前 · eSIM 双保险</strong><span>确认 → 免签 → eSIM → WhatsApp 持续可用</span></li>
+            </ul>
+            <p class="inv-group">Yaso 案例校准</p>
+            <ul>
+              <li><strong>官网进线成交</strong><span>投放 → 官网 → WhatsApp → 定金</span></li>
+              <li><strong>非工作时段 AI 接待</strong><span>夜间进线 → AI 采集 → 次日人工</span></li>
+              <li><strong>报价后防流失</strong><span>完整信息 → 人工报价 → 异议 → 定金</span></li>
+              <li><strong>长周期跟进提醒</strong><span>延后下定 → 系统提醒 → 轻触达</span></li>
+              <li><strong>落地微信群衔接</strong><span>成交后 → 行前 → 落地进群</span></li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="services">
+    <div class="wrap">
+      <p class="kicker">07 · 产品服务与消息类别</p>
       <h2>两个行业分别交付什么</h2>
       <p class="section-sub">覆盖 Marketing / Utility / Authentication / Service 四类消息能力。</p>
       <div class="grid-2" style="margin-bottom:14px">
@@ -297,7 +751,7 @@
 
   <section class="section" id="diff">
     <div class="wrap">
-      <p class="kicker">05 · 差异化</p>
+      <p class="kicker">08 · 差异化</p>
       <h2>不是「也能发 WhatsApp」，而是增长型 BSP</h2>
       <p class="section-sub">相对 WATI / YCloud / Infobip：以 Meta Ads 代理基因为核心差异。</p>
       <div class="diff-table">
@@ -323,6 +777,6 @@
     </div>
     <p class="footer">YinoLink × WhatsApp BSP Pitch</p>
   </section>
-  <script src="app.js?v=8"></script>
+  <script src="app.js?v=9"></script>
 </body>
 </html>

@@ -1,5 +1,5 @@
 (() => {
-  const els = document.querySelectorAll(".card, .arch-wrap, .mobius-panel, .matrix, .diff-table, .flywheel");
+  const els = document.querySelectorAll(".card, .arch-wrap, .mobius-panel, .matrix, .diff-table, .flywheel, .journey-card, .usecase-card, .priority-board, .inventory-col");
   if (!("IntersectionObserver" in window)) return;
   const io = new IntersectionObserver((entries) => {
     entries.forEach((e) => {
