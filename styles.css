@@ -944,58 +944,67 @@ a { color: inherit; text-decoration: none; }
 }
 .sticker:hover { transform: rotate(0deg) scale(1.02); }
 
-/* 旅游 · 标准色（浅填充 + 实线边框） */
+/* 旅游 · 深色填充 + 实线边框 */
 .sticker-travel.sticker-q {
-  background: #e8f8f2;
-  border-color: #1f8a70;
+  background: #1f8a70;
+  border-color: #0a6847;
   border-style: solid;
-  box-shadow: 2px 3px 0 rgba(31, 138, 112, 0.12);
+  color: #fff;
+  box-shadow: 2px 3px 0 rgba(10, 104, 71, 0.22);
 }
 .sticker-travel.sticker-k {
-  background: #e6f7fb;
-  border-color: #00b4d8;
+  background: #0096c7;
+  border-color: #006d8f;
   border-style: solid;
-  box-shadow: 2px 3px 0 rgba(0, 180, 216, 0.12);
+  color: #fff;
+  box-shadow: 2px 3px 0 rgba(0, 109, 143, 0.22);
 }
 .sticker-travel.sticker-f {
-  background: #fef9e8;
-  border-color: #e6a817;
+  background: #d4a017;
+  border-color: #9a7209;
   border-style: solid;
-  box-shadow: 2px 3px 0 rgba(230, 168, 23, 0.12);
+  color: #fff;
+  box-shadow: 2px 3px 0 rgba(154, 114, 9, 0.22);
 }
 
-/* 电商 · 更浅填充（同色系淡化 + 实线边框） */
+/* 电商 · 标准色填充 + 虚线边框 */
 .sticker-dtc.sticker-q {
-  background: #f7fdfb;
-  border-color: #a8dfd0;
-  border-style: solid;
-  box-shadow: 1px 2px 0 rgba(168, 223, 208, 0.14);
+  background: #e8f8f2;
+  border-color: #1f8a70;
+  border-style: dashed;
+  color: #1a1a1a;
+  box-shadow: 1px 2px 0 rgba(31, 138, 112, 0.1);
 }
 .sticker-dtc.sticker-k {
-  background: #f7fcfe;
-  border-color: #99dff0;
-  border-style: solid;
-  box-shadow: 1px 2px 0 rgba(153, 223, 240, 0.14);
+  background: #e6f7fb;
+  border-color: #00b4d8;
+  border-style: dashed;
+  color: #1a1a1a;
+  box-shadow: 1px 2px 0 rgba(0, 180, 216, 0.1);
 }
 .sticker-dtc.sticker-f {
-  background: #fffef9;
-  border-color: #f0dfa0;
-  border-style: solid;
-  box-shadow: 1px 2px 0 rgba(240, 223, 160, 0.14);
+  background: #fef9e8;
+  border-color: #e6a817;
+  border-style: dashed;
+  color: #1a1a1a;
+  box-shadow: 1px 2px 0 rgba(230, 168, 23, 0.1);
 }
 
-/* 独立象限默认等同旅游标准色 */
+/* 独立象限 · 电商模块沿用标准绿/蓝/黄 */
 .sticker-q:not(.sticker-dtc):not(.sticker-travel) {
   background: #e8f8f2;
   border-color: #1f8a70;
+  border-style: dashed;
 }
 .sticker-k:not(.sticker-dtc):not(.sticker-travel) {
   background: #e6f7fb;
   border-color: #00b4d8;
+  border-style: dashed;
 }
 .sticker-f:not(.sticker-dtc):not(.sticker-travel) {
   background: #fef9e8;
   border-color: #e6a817;
+  border-style: dashed;
 }
 
 .scenario-inventory {
