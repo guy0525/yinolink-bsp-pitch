@@ -804,27 +804,19 @@ a { color: inherit; text-decoration: none; }
   grid-template-rows: 1fr 1fr;
   min-height: 380px;
   background: #fff;
-  border: 1px solid #ddd;
-  border-radius: 4px;
+  border: 2px solid #999;
+  border-radius: 2px;
   position: relative;
+  overflow: hidden;
 }
-.matrix-frame::before,
-.matrix-frame::after {
-  content: "";
-  position: absolute;
-  background: #ddd;
-  z-index: 0;
-  pointer-events: none;
+/* 四象限十字分割线 */
+.matrix-quad:nth-child(1),
+.matrix-quad:nth-child(3) {
+  border-right: 2px solid #999;
 }
-.matrix-frame::before {
-  left: 50%; top: 0; bottom: 0;
-  width: 1px;
-  transform: translateX(-50%);
-}
-.matrix-frame::after {
-  top: 50%; left: 0; right: 0;
-  height: 1px;
-  transform: translateY(-50%);
+.matrix-quad:nth-child(1),
+.matrix-quad:nth-child(2) {
+  border-bottom: 2px solid #999;
 }
 
 .matrix-quad {
@@ -832,13 +824,15 @@ a { color: inherit; text-decoration: none; }
   padding: 18px 20px;
   display: flex;
   flex-direction: column;
-  z-index: 1;
   min-height: 190px;
+  background: #fff;
 }
-.q-quick { background: #fff; }
-.q-key { background: #fff; }
-.q-filler { background: #fff; }
-.q-black { background: #fff; }
+.priority-module.combined .matrix-frame {
+  min-height: 440px;
+}
+.priority-module.combined .matrix-quad {
+  min-height: 220px;
+}
 
 .quad-title {
   font-size: 15px;
@@ -867,6 +861,44 @@ a { color: inherit; text-decoration: none; }
 }
 .sticker-zone-empty { min-height: 60px; }
 
+/* 合并四象限 · 旅游上 / 电商下 */
+.sticker-zone-combined {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  margin-top: 4px;
+}
+.sticker-band {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 10px 4px;
+}
+.travel-band {
+  border-bottom: 1px dashed #d0d0d0;
+}
+.dtc-band {
+  background: rgba(247, 253, 251, 0.45);
+}
+.sticker-band-empty { min-height: 28px; border-bottom: 0; }
+.band-label {
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+}
+.travel-band .band-label { color: #1f8a70; }
+.dtc-band .band-label { color: #7ecfb8; }
+.band-stickers {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  align-items: center;
+  gap: 12px 16px;
+}
+
 .sticker {
   display: inline-flex;
   align-items: center;
@@ -887,15 +919,44 @@ a { color: inherit; text-decoration: none; }
 }
 .sticker:hover { transform: rotate(0deg) scale(1.02); }
 
-.sticker-q {
+/* 旅游 · 标准贴纸色 */
+.sticker-travel.sticker-q {
   background: #e8f8f2;
   border-color: #1f8a70;
 }
-.sticker-k {
+.sticker-travel.sticker-k {
   background: #e6f7fb;
   border-color: #00b4d8;
 }
-.sticker-f {
+.sticker-travel.sticker-f {
+  background: #fef9e8;
+  border-color: #e6a817;
+}
+
+/* 电商 · 更浅底色区分 */
+.sticker-dtc.sticker-q {
+  background: #f7fdfb;
+  border-color: #a8dfd0;
+}
+.sticker-dtc.sticker-k {
+  background: #f7fcfe;
+  border-color: #99dff0;
+}
+.sticker-dtc.sticker-f {
+  background: #fffef9;
+  border-color: #f0dfa0;
+}
+
+/* 兼容未标注行业的默认贴纸（等同旅游） */
+.sticker-q:not(.sticker-dtc):not(.sticker-travel) {
+  background: #e8f8f2;
+  border-color: #1f8a70;
+}
+.sticker-k:not(.sticker-dtc):not(.sticker-travel) {
+  background: #e6f7fb;
+  border-color: #00b4d8;
+}
+.sticker-f:not(.sticker-dtc):not(.sticker-travel) {
   background: #fef9e8;
   border-color: #e6a817;
 }
@@ -958,7 +1019,9 @@ a { color: inherit; text-decoration: none; }
   .priority-layout { grid-template-columns: 1fr; }
   .matrix-frame { min-height: 340px; }
   .matrix-quad { min-height: 170px; padding: 14px; }
+  .priority-module.combined .matrix-frame { min-height: 400px; }
   .sticker { font-size: 12px; padding: 8px 12px; }
+  .band-stickers { gap: 8px 10px; }
   .inventory-grid { grid-template-columns: 1fr; }
 }
 @media (max-width: 640px) {
